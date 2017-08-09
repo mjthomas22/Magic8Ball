@@ -2,15 +2,17 @@
     $(document).ready(function () {
         $("#8Ball").click(function () {
             $("#8Ball").addClass("animated shake");
+            setTimeout(function () {
+                $("#8Ball").removeClass("animated shake");
+            }, 1000);
         });
-        setTimeout(function () {
-            $("#8Ball").removeClass("animated shake");
-        }, 100);
     });
+
 </script>
 
 <div class="text-center">
     <input class="" id="8Ball" type="image" onclick="GetFortune()" src="~/Content/Image/download.jpg" />
+    <div style="width:10px;">
+        <p id="fortune" style="width:47px; word-wrap: break-word;"></p>
+    </div>
 </div>
-<button>Toggle class "main" for p elements</button>
-<p id="fortune"></p>

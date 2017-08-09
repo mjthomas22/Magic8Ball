@@ -20,16 +20,16 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 800px;
 }
 #8Ball {
-    width: 300px;
-    height: 300px;
     margin: auto;
     text-align: center;
-    display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    position: relative;
+    display: inline-block;
+    border:0px;
 }
 .text-center{
     margin:auto;
@@ -50,4 +50,17 @@ textarea {
 
 .shake {
     animation-name: shake;
+}
+input.select.textarea {
+   max-width: 800px;
+}
+#fortune {
+    color: #96b1de;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    font-weight: bold;
+    line-height: 90%;
 }

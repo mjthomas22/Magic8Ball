@@ -1,4 +1,4 @@
-﻿var fortune = ["Better Luck Next Time", "Your going to have a good day", "Your house will catch on fire", "Look behind you", "You will find a bag of money",
+﻿var fortune = ["Better\n Luck \nNext Time", "Your \ngoing to \nhave a \ngood day", "Your \nhouse will \ncatch \non fire", "Look \nbehind you", "You \nwill find \na bag of \nmoney",
     "Git init"];
 
 function GetRando() {
@@ -7,5 +7,10 @@ function GetRando() {
 }
 
 function GetFortune() {
-    document.getElementById("fortune").innerHTML = fortune[GetRando()];
+    setTimeout(function () {
+        document.getElementById("fortune").innerHTML = fortune[GetRando()];
+    }, 1000);
+    setTimeout(function () {
+        document.getElementById("fortune").innerHTML = "";
+    }, 2550);
 }
